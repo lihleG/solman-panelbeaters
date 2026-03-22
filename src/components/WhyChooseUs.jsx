@@ -3,16 +3,15 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Top Quality Services",
+    title: "High-Quality Workmanship",
     description:
-      "Placerat dui neque sapien interdum cursus. Vel mattis magnis efficitur blandit lectus duis placerat dignissim.",
+      "We take pride in delivering top-quality repairs on every vehicle. From accident damage to engine issues, we ensure every job is done with precision and care.",
     icon: (
       <svg
         className="w-10 h-10 text-blue-700"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           strokeLinecap="round"
@@ -24,16 +23,15 @@ const features = [
     ),
   },
   {
-    title: "Experienced Technicians",
+    title: "Experienced and Reliable Team",
     description:
-      "Placerat dui neque sapien interdum cursus. Vel mattis magnis efficitur blandit lectus duis placerat dignissim.",
+      "Our team has the skills and experience to handle all types of vehicle repairs. We work efficiently while maintaining high standards you can trust.",
     icon: (
       <svg
         className="w-10 h-10 text-blue-700"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           strokeLinecap="round"
@@ -45,16 +43,15 @@ const features = [
     ),
   },
   {
-    title: "Long Term Warranty",
+    title: "Customer Satisfaction First",
     description:
-      "Placerat dui neque sapien interdum cursus. Vel mattis magnis efficitur blandit lectus duis placerat dignissim.",
+      "We are committed to making sure every customer leaves satisfied. We offer honest service, fair pricing, and reliable results you can depend on.",
     icon: (
       <svg
         className="w-10 h-10 text-blue-700"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           strokeLinecap="round"
@@ -72,7 +69,7 @@ const WhyChooseUs = () => {
     <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 items-start">
-          {/* Left Column - Experience */}
+          {/* Left Column */}
           <div className="flex-1 lg:sticky lg:top-24">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -81,9 +78,12 @@ const WhyChooseUs = () => {
               transition={{ duration: 0.6 }}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             >
-              More Than 20+ Years Experience <br />
-              <span className="text-blue-700">in Car Services</span>
+              Why Choose Us <br />
+              <span className="text-blue-700">
+                Solman Panel Beaters and Mechanics
+              </span>
             </motion.h2>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -91,18 +91,24 @@ const WhyChooseUs = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-gray-600 text-lg mb-8"
             >
-              Nullam sem dictum fusce senectus auctor si ad. Nunc himenaeos maecenas
-              fames aptent justo tortor quisque quis volutpat.
+              We are dedicated to providing reliable vehicle repairs with a
+              strong focus on quality and customer satisfaction. Whether it’s
+              accident damage or engine repairs, you can trust us to get the job
+              done right.
             </motion.p>
+
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-md transition duration-300 transform hover:scale-105">
-                Discover More
-              </button>
+              <a
+                href="tel:0844298065"
+                className="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-md transition duration-300 transform hover:scale-105"
+              >
+                Call Now
+              </a>
             </motion.div>
           </div>
 
@@ -125,7 +131,9 @@ const WhyChooseUs = () => {
                     <h3 className="text-xl font-semibold text-blue-900 mb-2">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-600">{feature.description}</p>
+                    <p className="text-gray-600">
+                      {feature.description}
+                    </p>
                   </div>
                 </motion.div>
               ))}
