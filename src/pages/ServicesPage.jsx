@@ -11,9 +11,13 @@ const ServicesPage = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Our Services
+          </h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            Comprehensive automotive repair and maintenance services tailored to your needs.
+            Professional vehicle repair services you can trust. We handle
+            accident damage, engine problems, and full body repairs with
+            quality workmanship.
           </p>
         </div>
       </section>
@@ -30,33 +34,36 @@ const ServicesPage = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                Massa morbi nunc quam viverra letius sagittis. Vel mollis auctor sociosqu vivamus
-                duis facilisis. Aliquam finibus torquent at posuere ultricies. Eleifend eu cubilia
-                dui dictum ante curae posuere ipsum elementum. Feugiat proin sit finibus dui ac
-                nisl. Commodo tellus viverra erat consectetuer faucibus pretium montes elementum
-                turpis sociosqu cubilia. Volutpat platea ex urna dapibus dictum ultrices elit justo
-                dignissim nunc.
+                At Solman Panel Beaters and Mechanics, we specialize in repairing
+                all types of vehicles. Whether your car has been damaged in an
+                accident or is experiencing engine problems, our experienced team
+                is ready to help. We focus on delivering reliable, high-quality
+                results that get you back on the road safely.
               </p>
+
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                Elementum morbi nullam habitasse facilisis sed ut litora. Pharetra mattis facilisi
-                tellus sem potenti metus parturient senectus lacus. Dis dictumst netus nascetur
-                tortor ultricies. Volutpat rhoncus lectus eros magnis sit eu torquent malesuada
-                quam elementum fringilla.
+                We proudly serve customers across North West, Gauteng, and the
+                Free State. Our goal is simple — to provide honest service,
+                excellent workmanship, and complete customer satisfaction on
+                every job.
               </p>
 
               <div className="mt-8">
                 <h2 className="text-2xl font-bold text-blue-900 mb-6">
-                  Preventative Maintenance
+                  Our Services Include
                 </h2>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[
-                    "Brake Repair & Services",
-                    "Transmission Services",
-                    "Engine Services",
-                    "Tires & Wheels",
-                    "Body Repair & Painting",
+                    "Accident Damage Repairs",
+                    "Engine Repairs and Diagnostics",
+                    "Panel Beating and Body Work",
+                    "Spray Painting and Finishing",
+                    "General Vehicle Maintenance",
                   ].map((item, idx) => (
-                    <li key={idx} className="flex items-center space-x-2 text-gray-700">
+                    <li
+                      key={idx}
+                      className="flex items-center space-x-2 text-gray-700"
+                    >
                       <span className="text-blue-600 text-lg">•</span>
                       <span>{item}</span>
                     </li>
@@ -66,7 +73,7 @@ const ServicesPage = () => {
 
               <div className="mt-10 text-center md:text-left">
                 <h3 className="text-2xl font-semibold text-blue-800">
-                  Give your car a good start
+                  Quality repairs. Reliable service. Trusted results.
                 </h3>
               </div>
             </motion.div>
@@ -82,18 +89,18 @@ const ServicesPage = () => {
               <div className="grid grid-cols-1 gap-6">
                 <img
                   src={serviceImg1}
-                  alt="Car repair service"
+                  alt="Accident repair service"
                   className="rounded-lg shadow-lg w-full h-64 object-cover"
                 />
                 <div className="grid grid-cols-2 gap-4">
                   <img
                     src={serviceImg2}
-                    alt="Mechanic at work"
+                    alt="Mechanic repairing engine"
                     className="rounded-lg shadow-lg w-full h-48 object-cover"
                   />
                   <img
                     src={serviceImg3}
-                    alt="Car maintenance"
+                    alt="Car body repair and painting"
                     className="rounded-lg shadow-lg w-full h-48 object-cover"
                   />
                 </div>
@@ -103,7 +110,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Optional CTA */}
+      {/* CTA */}
       <div className="pb-20">
         <CallToAction />
       </div>
