@@ -4,8 +4,7 @@ import heroImage from "../images/solmon1.jpeg";
 
 const Hero = () => {
   const openCalendly = () => {
-    // Replace with your actual Calendly link
-    const calendlyUrl = 'https://calendly.com/yourusername/30min';
+    const calendlyUrl = 'https://calendly.com/solmanpanel/30min';
     if (window.Calendly) {
       window.Calendly.initPopupWidget({ url: calendlyUrl });
     } else {
