@@ -1,8 +1,18 @@
 // src/components/Hero.jsx
 import { motion } from "framer-motion";
-import heroImage from "../images/solmon1.jpeg"; // adjust path if needed
+import heroImage from "../images/solmon1.jpeg";
 
 const Hero = () => {
+  const openCalendly = () => {
+    // Replace with your actual Calendly link
+    const calendlyUrl = 'https://calendly.com/yourusername/30min';
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({ url: calendlyUrl });
+    } else {
+      window.open(calendlyUrl, '_blank');
+    }
+  };
+
   return (
     <section className="bg-gradient-to-r from-gray-50 to-gray-100 py-20 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
@@ -34,7 +44,10 @@ const Hero = () => {
             transition={{ delay: 0.5, duration: 0.5 }}
             className="mt-8"
           >
-            <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-md shadow-lg transition duration-300 transform hover:scale-105">
+            <button
+              onClick={openCalendly}
+              className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-md shadow-lg transition duration-300 transform hover:scale-105"
+            >
               Get Free Quotes
             </button>
           </motion.div>

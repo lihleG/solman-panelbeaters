@@ -2,6 +2,15 @@
 import { motion } from "framer-motion";
 
 const Contact = () => {
+  const openCalendly = () => {
+    const calendlyUrl = 'https://calendly.com/solmanpanel/30min';
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({ url: calendlyUrl });
+    } else {
+      window.open(calendlyUrl, '_blank');
+    }
+  };
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -73,6 +82,18 @@ const Contact = () => {
                   <p className="text-gray-600 italic">
                     Quality repairs you can trust.
                   </p>
+                </div>
+
+                {/* Calendly Button */}
+                <div className="pt-2">
+                  <motion.button
+                    onClick={openCalendly}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-md shadow-lg transition w-full md:w-auto"
+                  >
+                    📅 Book a Free Consultation
+                  </motion.button>
                 </div>
               </div>
             </motion.div>
